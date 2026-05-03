@@ -27,6 +27,8 @@ public class MenuActivity extends AppCompatActivity {
             intent = new Intent(MenuActivity.this, MainActivity.class);
         }else if(view.getId() == R.id.statusActivityB){
             intent = new Intent(MenuActivity.this, StatusActivity.class);
+        }else if(view.getId() == R.id.listActivity){
+            intent = new Intent(MenuActivity.this, ExerciseActivity.class);
         }else{
             intent = new Intent(MenuActivity.this, GameActivity.class);
         }

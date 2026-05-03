@@ -39,11 +39,27 @@
             android:text="Statuses" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/gameActivityB"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="20"
-        android:onClick="buttonClicked"
-        android:text="Game" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gameActivityB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:onClick="buttonClicked"
+            android:text="Game" />
+
+        <Button
+            android:id="@+id/listActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:onClick="buttonClicked"
+            android:text="Exercises" />
+    </LinearLayout>
+
 </LinearLayout>

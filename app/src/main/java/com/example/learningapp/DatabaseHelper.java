@@ -78,6 +78,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 exer.setId(c.getLong(0));
                 exer.setName(c.getString(c.getColumnIndexOrThrow(EXERCISE_NAME)));
                 exer.setDescription(c.getString(2));
+
+                result.add(exer);
             }
         }finally {
             c.close();
